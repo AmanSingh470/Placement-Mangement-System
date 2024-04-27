@@ -11,7 +11,7 @@
         display: flex;
         background-color: rgb(31,31,31);
         color: white;
-        padding: 10px;
+        padding: 10rem;
         align-items: center;
         height: 55vh;
         justify-content: space-evenly;
@@ -36,18 +36,18 @@
 </style>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="">BPIT</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    </nav>
+<nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/bpit_tpd_ms/admin/">
+      <img src="image/bpit_logo.jpg" alt="Logo" width="50" class="d-inline-block align-text-top">
+      BPIT
+    </a>
+  </div>
+</nav>
 
-
-
-    <h2 class="text-center my-4">Training And Placement Managemnt System</h2>
+    <div class="container-fluid">
+      <h2 class="text-center my-4">Training And Placement Managemnt System</h2>
+    </div>
 
 <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModal" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -212,8 +212,8 @@
     
 
     <div class="container-xl text-center">
-      <div class="row">
-        <div class="col">
+      <div class="row mb-2">
+          <div class="col-md-4 col-lg-3 col-sm-6 col-12 col-xl-3">
           <div class="card m-3">
             <img src="image/student-card-img.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -221,8 +221,8 @@
               <button id="student-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#studentModal">View Student</button>
             </div>
           </div>
-        </div>
-        <div class="col">
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 col-12 col-xl-3">
           <div class="card m-3">
             <img src="image/coordinator-card-img.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -230,8 +230,8 @@
               <button id="coordinator-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coordinatorModal">View Coordinators</button>
             </div>
           </div>
-        </div>
-        <div class="col">
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 col-12 col-xl-3">
           <div class="card m-3">
             <img src="image/company-card-img.avif" class="card-img-top" alt="...">
             <div class="card-body">
@@ -239,10 +239,9 @@
               <button id="company-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#companyModal">View Company</button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
+
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 col-12 col-xl-3">
           <div class="card m-3">
             <img src="image/placement-card-img.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -250,8 +249,8 @@
               <button id="placement-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#placementModal">View Placement</button>
             </div>
           </div>
-        </div>
-        <div class="col">
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 col-12 col-xl-3">
           <div class="card m-3">
             <img src="image/student-eligible-card.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -259,8 +258,8 @@
               <button id="eligile-student-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eligibleStudentModal">View Eligible Students</button>
             </div>
           </div>
-        </div>
-        <div class="col">
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 col-12 col-xl-3">
           <div class="card m-3">
             <img src="image/company-and-criteria-card.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -268,21 +267,21 @@
               <button id="company-and-criteria-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#compAndCriteriaModal">View Company and Their Criteria</button>
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </div>
 
-    <footer>
-        <div id="footer">
-            <div class="footer-items">
+    <footer class="container-fluid">
+        <div class="row bg-dark text-white p-3 align-items-center">
+            <div class="col-md-4 col-sm-4 col-12 mt-3">
                 <div>
-                    <img src="image/bpit_logo.jpg" height="80px" alt="">
+                    <img src="image/bpit_logo.jpg" height="80em" alt="">
                 </div>
                 <div>
                     Bhagwan Parshuram Institute of Technology, Delhi was established by the Bhartiya Brahmin Charitable Trust in 2007 with the aim to impart value-based education and to prepare the most competent and ingenious technocrats and leaders of the country.
                 </div>
             </div>
-            <div class="footer-items">
+            <div class="col-md-4 col-sm-4 col-12 mt-3">
               <h4>Address</h4>
                <div>
                 <ul>
@@ -295,14 +294,16 @@
                </div>
 
             </div>
-            <div class="footer-items">
+            <div class="col-md-4 col-sm-4 col-12 mt-3">
               <h4>Contact Us</h4>
               <ul>
                 <li>Tel: 011-2757 1080, 011-2757 2900</li>
                 <li>Mail: bpitindia@yahoo.com
             </div>
         </div>
-        <div id="footer-end">
+    </footer>
+
+    <div class="container-fluid text-center bg-black text-white">
           About the developer<br>
           Hi, I am Aman a BTECH student who loves developing applications
           <div id="social-box">
@@ -310,8 +311,7 @@
             <a href="https://www.linkedin.com/in/aman-singh-a301a8291" target="_blank"><i class="fa-brands fa-linkedin-in fa-beat m-2"></i></a>
             <a href="https://www.instagram.com/amansingh__16" target="_blank"><i class="fa-brands fa-instagram fa-beat m-2"></i></a>
           </div>
-        </div>
-    </footer>
+    </div>
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
